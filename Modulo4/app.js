@@ -41,7 +41,6 @@
 // console.log(mulNumbers());
 // console.log(divNumbers());
 
-
 // Inputs
 
    var numA = () => parseInt(document.getElementById("first-number").value);
@@ -51,7 +50,7 @@
 
    var sumNumbers = () => numA() + numB();
 
-// substraction numbers with function.
+// Substraction numbers with function.
 
    var subNumbers = () => numA() - numB();
 
@@ -66,7 +65,7 @@
    var divNumbers = () => numA() / numB();
 
 
-// Result
+// Results
 
    var ResultSum = () => document.getElementById("result").innerText = sumNumbers();
    var ResultSub = () => document.getElementById("result").innerText = subNumbers();
@@ -74,20 +73,53 @@
    var ResultDiv = () => document.getElementById("result").innerText = divNumbers();
 
 
+
 // Events
 
-   document.getElementById("sum").addEventListener("click", ResultSum);
-   document.getElementById("sub").addEventListener("click", ResultSub);
-   document.getElementById("mul").addEventListener("click", ResultMul);
-   document.getElementById("div").addEventListener("click", ResultDiv);
+   document.getElementById("sum").addEventListener("click", ifSumNumber);
+   document.getElementById("sub").addEventListener("click", ifSubNumber);
+   document.getElementById("mul").addEventListener("click", ifMulNumber);
+   document.getElementById("div").addEventListener("click", ifDivNumber);
 
-//Null Field
+   //Null Field
 
+   function ifSumNumber() {
    if (!numA() || !numB()){
-         document.getElementById("result").innerText = "You should use 2 numbers";
+      document.getElementById("result").innerText = "You should use 2 numbers";
+      console.log("primera");
+   } else {
+      ResultSum();
+      console.log("segunda");
+   }
+}
+
+   function ifSubNumber() {
+   if (!numA() || !numB()){
+      document.getElementById("result").innerText = "You should use 2 numbers";
+      console.log("tercera");
+   } else {
+      ResultSum();
+      console.log("cuarta");
       }
+   }
 
+   function ifMulNumber() {
+      if (!numA() || !numB()){
+         document.getElementById("result").innerText = "You should use 2 numbers";
+         console.log("quinta");
+      } else {
+         ResultSum();
+         console.log("sexta");
+      }
+   }
 
-
-
+   function ifDivNumber() {
+      if (!numA() || !numB()){
+         document.getElementById("result").innerText = "You should use 2 numbers";
+         console.log("séptima");
+      } else {
+         ResultSum();
+         console.log("octava");
+      }
+   }
 

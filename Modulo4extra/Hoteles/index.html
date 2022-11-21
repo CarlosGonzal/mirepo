@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+
+    <head>
+
+    <body>
+
+        <header id="title">
+            <h1 id="h1-hotel">Hotel Nueva Málaga</h1>
+            <h2 id="resultado"> resultado</h2>
+        </header>
+
+        <label>Choose de Hotel</label>
+        <div>
+            <label>Choose your room</label>
+            <select name="hotel" id="hotels">
+                <option value="standar">Standar</option>
+                <option value="junior-suite">Junior Suite</option>
+                <option value="suite">Suite</option>
+            </select>
+        </div>
+
+        <div>
+        <label>Do you want Spa in your room?</label>
+        <input type="checkbox" id="check-spa">
+        </div>
+
+        <div>
+            <label>Choose into Individual room, Double room or Triple Room</label>
+            <select name="numbers-rooms" id="rooms">
+                <option value="individual" id="individual">individual</option>
+                <option value="double" id="double">Double</option>
+                <option value="triple" id="triple">Triple</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Choose number of nights</label>
+            <input type="number" id="number-nights">
+        </div>
+
+        <div>
+            <label>Number nights - Parking</label>
+            <input type="number" id="number-nights-parking">
+        </div>
+
+        <div>
+            <button id="calculate-price">Calculate price</button>
+        </div>
+
+    <script src="app.js"></script>
+    </body>
+
+    </head>
+
+</html>
